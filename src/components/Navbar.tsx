@@ -36,24 +36,6 @@ const Navbar = () => {
 						icon: PencilIcon,
 					}} />
 				</Link>
-				<div className="flex items-center justify-between gap-6">
-					{isLoggedIn ? (
-						<Link
-						to="/tasks"
-						className="font-semibold hover:scale-105 transition duration-300 ease-in-out"
-					>
-						View Tasks
-					</Link>
-					) : (
-						<Link
-						to="/login"
-						className="flex justify-center items-center font-semibold hover:scale-105 transition duration-300 ease-in-out"
-					  >
-						SignIn
-						<UserGroupIcon className="h-6 w-6 text-black-500 mx-1" /> 
-					</Link>
-					)}
-				</div>
 			</ul>
 		</nav>
 	);
